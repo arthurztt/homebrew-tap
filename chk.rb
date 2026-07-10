@@ -5,20 +5,20 @@
 class Chk < Formula
   desc "Checa o status de endpoints HTTP"
   homepage "https://github.com/arthurztt/chkCLI"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.4/chkCLI_darwin_amd64.tar.gz"
-      sha256 "89bedb34facd3414cc3963ee02d6a75b0aabc590126036076b895cd15a06aae5"
+      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.5/chkCLI_darwin_amd64.tar.gz"
+      sha256 "d0efe4e152dc385a0876ae6825e71f0d55fc80bbe17634900eb823c28fdf7459"
 
       define_method(:install) do
         bin.install "chkCLI.git"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.4/chkCLI_darwin_arm64.tar.gz"
-      sha256 "7a7ddca962ec7053443099d2e10f4e117d4c5bfc2edfd0d4674a10dec1cc3f59"
+      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.5/chkCLI_darwin_arm64.tar.gz"
+      sha256 "c8dc79a737dea0025cef86cee53711792e257870a7027a23f570a561dc836c92"
 
       define_method(:install) do
         bin.install "chkCLI.git"
@@ -28,15 +28,15 @@ class Chk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.4/chkCLI_linux_amd64.tar.gz"
-      sha256 "2e4514c31f876cd2365690d2826c65d351c09874fbad606229b346ce3b70b43e"
+      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.5/chkCLI_linux_amd64.tar.gz"
+      sha256 "9fe508e89160196a56b586d40062a50ccca7d1d017920040b1450b174fe0c817"
       define_method(:install) do
         bin.install "chkCLI.git"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.4/chkCLI_linux_arm64.tar.gz"
-      sha256 "bdf4d73a21c4f9c231b2f4d6e65e75b48f191d443409e596fa705714c8247441"
+      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.5/chkCLI_linux_arm64.tar.gz"
+      sha256 "b67d2afac0022e8a8a698a587cf0108fe9d01bc6762ecbbbeeace9129f3486ed"
       define_method(:install) do
         bin.install "chkCLI.git"
       end
