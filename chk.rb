@@ -5,20 +5,20 @@
 class Chk < Formula
   desc "Checa o status de endpoints HTTP"
   homepage "https://github.com/arthurztt/chkCLI"
-  version "0.1.8"
+  version "0.1.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.8/chk_darwin_amd64.tar.gz"
-      sha256 "550c4dbfd23602de46eb2c4fbac45216803ffbc13c9099f68057e2026a926a6f"
+      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.9/chk_darwin_amd64.tar.gz"
+      sha256 "09c36d4795f6eb4dc3a264561c9d5a044d2406c90617ff27e93aa9169d4fe7cc"
 
       define_method(:install) do
         bin.install "chk
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.8/chk_darwin_arm64.tar.gz"
-      sha256 "4597ee8922f1a7bceffd692c7b0dde97fae198b2505df4fae11a068c155513bf"
+      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.9/chk_darwin_arm64.tar.gz"
+      sha256 "4a63e93655bb5298aec7452c260ea6db51251d06c5f11b7fa9053d014adbbbe9"
 
       define_method(:install) do
         bin.install "chk
@@ -28,15 +28,15 @@ class Chk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.8/chk_linux_amd64.tar.gz"
-      sha256 "e372bacad2aebbccab8966217f5d688c5d7e8dcce2b51f107cf9486bd5ecd0a8"
+      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.9/chk_linux_amd64.tar.gz"
+      sha256 "4c8006e6e51f3ce5181bf9814a202a28f88c34e8eda31a388dcdf673ba0a3662"
       define_method(:install) do
         bin.install "chk
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.8/chk_linux_arm64.tar.gz"
-      sha256 "8d6745a2e73c4c495512a4cc7a0f54e51f29858e1e530ff035bec46a390e225e"
+      url "https://github.com/arthurztt/chkCLI/releases/download/v0.1.9/chk_linux_arm64.tar.gz"
+      sha256 "de8b89d68ac03318dd6006597c9dba27d6572492a82ad2abd39e3590bbf706c8"
       define_method(:install) do
         bin.install "chk
       end
